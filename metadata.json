@@ -1,0 +1,6 @@
+{
+  "name": "Cantera Ca's Vilafranquer",
+  "description": "Gestor de producción y mantenimiento industrial para Cantera Ca's Vilafranquer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

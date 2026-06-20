@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;700;800;900&family=Playball&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-orange-500: #dc2626; /* Brilliant Professional Red */
+  --color-orange-600: #b91c1c; /* Crimson Red */
+}
+
+body {
+  margin: 0;
+  background-color: #f8fafc; /* Crisp professional light background */
+  color: #0f172a; /* Deep charcoal text */
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar for white/red industrial theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #dc2626;
+}
+
+/* Custom text tracking */
+.tracking-ultra {
+  letter-spacing: 0.25em;
+}
+.tracking-mega {
+  letter-spacing: 0.4em;
+}
+
+/* -------------------------------------------------------------------------- */
+/* PROFESSIONAL WHITE & RED INDUSTRIAL OVERRIDES                              */
+/* -------------------------------------------------------------------------- */
+
+/* Core Application Wrapper styling */
+#main-app-container {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+/* Main Container Header */
+#main-app-container header {
+  background-color: #ffffff !important;
+  border-bottom: 2px solid #e2e8f0 !important;
+}
+#main-app-container header span {
+  color: #0f172a !important;
+}
+#main-app-container header span.text-orange-500 {
+  color: #dc2626 !important;
+}
+#main-app-container header div.h-6 {
+  background-color: #cbd5e1 !important;
+}
+#main-app-container header .text-white/85 {
+  color: #334155 !important;
+}
+#main-app-container header .text-white/40, 
+#main-app-container header .opacity-40 {
+  color: #64748b !important;
+  opacity: 1 !important;
+}
+
+/* Lock/Unlock Padlock styling details */
+#padlock-toggle {
+  border-width: 1.5px !important;
+}
+
+/* Left vertical decorative/brand rail */
+#main-app-container main > div.w-10 {
+  background-color: #f1f5f9 !important;
+  border-right: 1px solid #e2e8f0 !important;
+}
+#main-app-container main > div.w-10 span.brand-rail-text {
+  color: #475569 !important;
+  opacity: 0.7 !important;
+}
+
+/* Background Workspace area */
+#central-view-workspace {
+  background-color: #f8fafc !important;
+}
+#central-view-workspace .opacity-\[0\.02\] {
+  opacity: 0.035 !important;
+  color: #dc2626 !important;
+}
+
+/* Giant skews & Header visuals */
+#main-app-container h1,
+#main-app-container h1 span {
+  color: #0f172a !important;
+}
+#main-app-container h1 span.text-orange-500 {
+  color: #dc2626 !important;
+}
+#main-app-container h3,
+#main-app-container h4 {
+  color: #0f172a !important;
+}
+#main-app-container .text-orange-500,
+#main-app-container .text-purple-400,
+#main-app-container .text-emerald-400,
+#main-app-container .text-blue-400 {
+  color: #dc2626 !important; /* Force beautiful uniform professional red accents */
+}
+#main-app-container .hover\:text-orange-500:hover,
+#main-app-container .hover\:text-purple-400:hover {
+  color: #b91c1c !important;
+}
+
+/* Bento Layout Boxes / Cards styling */
+#main-app-container .bg-white/5,
+#main-app-container .bg-black/40,
+#main-app-container .bg-black/30,
+#main-app-container .bg-white/10 {
+  background-color: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03) !important;
+}
+
+/* Text elements transparency adjustments */
+#main-app-container .text-white/30,
+#main-app-container .text-white/40,
+#main-app-container .text-white/50,
+#main-app-container .text-white/60,
+#main-app-container .text-white/70,
+#main-app-container .text-white/80,
+#main-app-container .text-white/85,
+#main-app-container .text-white/95 {
+  color: #475569 !important;
+}
+
+#main-app-container .opacity-40,
+#main-app-container .opacity-60 {
+  opacity: 1 !important;
+  color: #475569 !important;
+}
+
+/* Buttons inside shortcuts */
+#main-app-container .space-y-2 button {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+  border-color: #cbd5e1 !important;
+}
+#main-app-container .space-y-2 button:hover {
+  border-color: #dc2626 !important;
+  color: #dc2626 !important;
+  background-color: #fef2f2 !important;
+}
+
+/* Main buttons */
+#main-app-container button.bg-orange-500,
+#main-app-container button.bg-purple-600 {
+  background-color: #dc2626 !important;
+  color: #ffffff !important;
+}
+#main-app-container button.bg-orange-500:hover,
+#main-app-container button.bg-purple-600:hover {
+  background-color: #b91c1c !important;
+}
+
+/* Table re-styling */
+#main-app-container table {
+  background-color: #ffffff !important;
+}
+#main-app-container table {
+  background-color: #ffffff !important;
+}
+#main-app-container table thead tr {
+  background-color: #f1f5f9 !important;
+  border-bottom: 2px solid #cbd5e1 !important;
+}
+#main-app-container table thead th {
+  color: #0f172a !important;
+}
+#main-app-container table tbody tr {
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+#main-app-container table tbody tr:hover {
+  background-color: #f8fafc !important;
+}
+#main-app-container table tbody td {
+  color: #334155 !important;
+}
+
+/* Forms input, date, selects overrides */
+#main-app-container input[type="date"],
+#main-app-container input[type="number"],
+#main-app-container input[type="text"],
+#main-app-container select,
+#main-app-container .bg-\[\#121315\],
+#main-app-container .bg-black {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #cbd5e1 !important;
+}
+
+#main-app-container input[type="date"]:focus,
+#main-app-container input[type="number"]:focus,
+#main-app-container input[type="text"]:focus,
+#main-app-container select:focus {
+  border-color: #dc2626 !important;
+  box-shadow: 0 0 0 1px #dc2626 !important;
+}
+
+/* Floating Action Button (FAB) */
+#quick-action-fab {
+  background-color: #dc2626 !important;
+  color: #ffffff !important;
+  border-color: #b91c1c !important;
+  box-shadow: 0 10px 15px -3px rgba(220, 38, 38, 0.4), 0 4px 6px -2px rgba(220, 38, 38, 0.1) !important;
+}
+#quick-action-fab:hover {
+  background-color: #b91c1c !important;
+}
+
+/* Bottom Navigation Bar re-styling */
+#main-app-container footer {
+  background-color: #ffffff !important;
+  border-top: 2px solid #cbd5e1 !important;
+}
+#main-app-container footer button {
+  color: #475569 !important;
+  border-bottom-color: transparent !important;
+}
+#main-app-container footer button:hover {
+  color: #dc2626 !important;
+}
+#main-app-container footer button.border-orange-500 {
+  border-bottom-color: #dc2626 !important;
+  color: #dc2626 !important;
+  background-color: #fef2f2 !important;
+}
+#main-app-container footer .text-white/30 {
+  color: #64748b !important;
+}
+
+/* Sub-tabs menu overrides (Maintenance menu) */
+#main-app-container .flex.gap-1 button {
+  border-color: #cbd5e1 !important;
+  color: #475569 !important;
+  background-color: transparent !important;
+}
+#main-app-container .flex.gap-1 button:hover {
+  color: #dc2626 !important;
+  border-color: #dc2626 !important;
+}
+#main-app-container .flex.gap-1 button.bg-orange-500 {
+  background-color: #dc2626 !important;
+  color: #ffffff !important;
+  border-color: #dc2626 !important;
+}
+
+/* Modals Backdrops & Overlays (Dynamic overrides) */
+.fixed.inset-0.bg-black\/80 {
+  background-color: rgba(15, 23, 42, 0.6) !important;
+}
+
+/* Numpad Access Card Overlay styling */
+.fixed.inset-0.bg-black\/80 .bg-\[\#0f1012\] {
+  background-color: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+}
+.fixed.inset-0.bg-black\/80 .bg-\[\#0f1012\] h2,
+.fixed.inset-0.bg-black\/80 .bg-\[\#0f1012\] p {
+  color: #0f172a !important;
+}
+.fixed.inset-0.bg-black\/80 .bg-\[\#0f1012\] .bg-black\/60 {
+  background-color: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+}
+.fixed.inset-0.bg-black\/80 .bg-\[\#0f1012\] .bg-white/5 {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+.fixed.inset-0.bg-black\/80 .bg-\[\#0f1012\] .bg-white/5:hover {
+  background-color: #f1f5f9 !important;
+  border-color: #94a3b8 !important;
+}
+.fixed.inset-0.bg-black\/80 .bg-\[\#0f1012\] button.bg-orange-500 {
+  background-color: #dc2626 !important;
+  color: #ffffff !important;
+}
+.fixed.inset-0.bg-black\/80 .bg-\[\#0f1012\] button.bg-orange-500:hover {
+  background-color: #b91c1c !important;
+}
+
+/* Checkboxes in list / checklists items selection */
+#main-app-container .border-orange-500\/50,
+#main-app-container .border-orange-500\/30 {
+  border-color: #dc2626 !important;
+}
+#main-app-container .bg-orange-500\/5 {
+  background-color: #fef2f2 !important;
+}
+
+/* Text selections block styling */
+#main-app-container::selection,
+#main-app-container *::selection {
+  background-color: #fee2e2 !important;
+  color: #b91c1c !important;
+}
