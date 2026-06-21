@@ -3,7 +3,7 @@ import { getFirestore, doc, onSnapshot, setDoc, getDoc } from "firebase/firestor
 import { DBState } from "./types";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCVq-g9PrmyhO3Sfw_ezOTBbnSIwNXFK1A",
+  apiKey: 
   authDomain: "encoded-plateau-6f4nj.firebaseapp.com",
   projectId: "encoded-plateau-6f4nj",
   storageBucket: "encoded-plateau-6f4nj.firebasestorage.app",
